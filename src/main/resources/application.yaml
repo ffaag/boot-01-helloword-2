@@ -1,0 +1,51 @@
+# 非常适合用来做以数据为中心的配置文件，所以以后首选这个
+
+# \n   如果一个字符串里面有这个，用双引号引起来，那他就是换行的意思
+#                             用单引号引起来，那就是\n没变
+
+# 对象：键值对的集合。map、hash、set、object
+# 行内写法： k: {k1: v1,k2: v2,k3: v3}
+# 或
+# k:
+#   k1: v1
+#   k2: v2
+#   k3: v3
+
+# 数组：一组按次序排列的值。array、list、queue
+# 行内写法： k: [v1,v2,v3]
+# 或者
+# k:
+#   - v1
+#   - v2
+#   - v3
+
+
+# 为一个对象赋值
+person:
+  userName: zhangsan
+  boss: true
+  birth: 2019/12/9
+  age: 18
+  # 行内写法：interests: [篮球，足球]
+  interests:
+    - 篮球
+    - 足球
+    - 18
+  animal: [猫,狗,猪,鸡]
+  score: {english: 80, math: 90}
+  salarys:
+    - 9999.98
+    - 9999.99
+  pet:
+    name: 狗
+    weight: 99.99
+  allPets:
+    sick:
+      - {name: 狗, weight: 99.99}
+      - name: 猫
+        weight: 92.99
+      - name: 虫
+        weight: 77.77
+    health:
+      - {name: 猪, weight: 125.56}
+      - {name: 鸡, weight: 5.15}
